@@ -1,0 +1,32 @@
+Python 3.11.2 (tags/v3.11.2:878ead1, Feb  7 2023, 16:38:35) [MSC v.1934 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> weight = 8.5
+>>> #Ground shipping
+>>> if weight <= 2:
+...   print("Ground Shipping Cost =", weight * 1.50 + 20)
+... elif weight >=3 and weight <=6:
+...   print("Ground Shipping Cost =", weight * 3 + 20)
+... elif weight >=7 and weight <=10:
+...   print("Ground Shipping Cost =", weight * 4 + 20)
+... elif weight >=11:
+...   print("Ground Shipping Cost =", weight * 4.75 + 20)
+...
+Ground Shipping Cost = 54.0
+>>> cost_ground_premium = 125.00
+>>> #Premium Ground Shipping
+>>> print("Premium Ground Shipping = 125.00")
+Premium Ground Shipping = 125.00
+>>>
+>>> cost_drone_shipping = 8.5
+>>> #Drone Shipping
+>>> if cost_drone_shipping <=2:
+...   print("Drone Shipping Cost =", cost_drone_shipping * 4.50)
+... elif cost_drone_shipping >=3 and weight <=6:
+...   print("Drone Shipping Cost =", cost_drone_shipping * 9.00)
+... elif cost_drone_shipping >=7 and weight <=10:
+...   print("Drone Shipping Cost =", cost_drone_shipping * 12.00)
+... elif cost_drone_shipping >=11:
+...   print("Drone Shipping Cost =", cost_drone_shipping * 14.25)
+... else:
+...   print("Error")
+...
